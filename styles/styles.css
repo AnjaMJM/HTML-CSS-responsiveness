@@ -26,6 +26,7 @@ Table of Contents:
 
 body {
     height: 100vh;
+    background-color: var(--bg-color-peach);
 }
 
 
@@ -35,22 +36,42 @@ body {
 body {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
+    font-size: 12px;
 }
 
 /*//////////////////////// 3. Areas ////////////////////////*/
 
 .outer-container {
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column;
 }
 
 .inner-container {
-    flex-basis: 1200px;
-    margin: 0 20px;
+    background-color: var(--bg-color-seashell);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 20px;
 
     display: flex;
     flex-direction: column;
 }
 
+img {
+    width: 100%;
+}
+
 /*//////////////////////// 4. Media Queries ////////////////////////*/
+
+@media (min-width:768px) {
+
+    body {
+        background-color: var(--bg-color-tangerine);
+    }
+}
+
+@media (min-width:992px) {
+
+    body {
+        background-color: var(--bg-color-burntsienna);
+    }
+}
