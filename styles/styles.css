@@ -8,28 +8,49 @@ Table of Contents:
     4. Media Queries
 ////////////////////////////////////////////////////////////////////////*/
 
-/*////////////////////////
-    1. Global Styles
-////////////////////////*/
+/*//////////////////////// 1. Global Styles ////////////////////////*/
+
+:root {
+    --bg-color-peach: #F9C48B;
+    --bg-color-tangerine: #F69051;
+    --bg-color-burntsienna: #F26D40;
+    --bg-color-blackbean: #260803;
+    --bg-color-seashell: #FDEFEC;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+
+
+/*//////////////////////// 2. Typography ////////////////////////*/
 
 body {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
 }
 
-/*////////////////////////
-    2. Typography
-////////////////////////*/
+/*//////////////////////// 3. Areas ////////////////////////*/
 
+.outer-container {
+    display: flex;
+    flex-direction: row;
 
+}
 
-/*////////////////////////
-    3. Areas
-////////////////////////*/
+.inner-container {
+    flex-basis: 1200px;
+    margin: 0 20px;
 
+    display: flex;
+    flex-direction: column;
+}
 
-
-
-/*////////////////////////
-    2. Media Queries
-////////////////////////*/
+/*//////////////////////// 4. Media Queries ////////////////////////*/
